@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <style>
+    a{
+      text-decoration:none;
+      color:#333;
+    }
+    .wide{
+      width: 1200px;
+
+      margin: auto;
+
+    }
+    .header{
+      height: 100px;
+      width: 1200px;
+      margin: auto;
+      background-color: #f4f4f4;
+    }
+    .biaoti{
+      float: left;
+      margin-top: 10px;
+      margin-left: 20px;
+      letter-spacing: 3px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .daohang {
+      float: right;
+      margin-top: 40px;
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 4px;
+    }
+    .tubiao{
+      width: 50px;
+      height: 50px;
+      margin-top: 20px;
+
+    }
+    .avaenge{
+      float: right;
+      margin-top: 25px;
+      margin-left: 20px;
+    }
+
+    .footer{
+      margin-top: 50px;
+      background-color: #f4f4f4;
+      height: 500px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+<div class="wide">
+  <div class="header">
+
+    <div class="biaoti">
+      <img class="tubiao" src="avaenge.png"/>
+      <div class="avaenge"><span >复仇者联盟</span></div></div>
+
+    <div class="daohang"><span><a href="home.html">首页</a> <a href="content_c.html">新闻</a>  <a href="map.html">关于我们</a></span></div>
+
+  </div>
+
+  <div class="content" style="width: 80%;margin-top: 100px"></div>
+<div style="margin-left: 500px;margin-top: 20px">
+  <button class="pr" style="font-size: 30px"> << </button>
+  <button class="af" style="font-size: 30px"> >> </button>
+</div>
+
+
+
+  <div class="footer">
+    <div style="position:absolute;margin-top: 100px;">
+      <img style="padding-left: 100px;width:100px;height: 100px" src="img/map.png">
+      <img  style="padding-left: 100px;width:100px;height: 100px" src="img/email.png">
+      <img style="padding-left: 100px;width:100px;height: 100px" src="img/customer.png"></div>
+    <div style="position:absolute;margin-top: 228px;">
+      <span style="padding-left: 80px">福州市仓山万达B区</span>
+      <span style="padding-left: 60px">admin@example.com</span>
+      <span style="padding-left: 60px">400-123-456</span>
+
+    </div>
+    <img style="width: 300px;height: 300px;float: right;margin-right: 100px;margin-top: 40px" src="img/erwei.png">
+    <span style="display: block;float: right;margin-top: 350px;margin-right: -250px">扫一扫，加入复仇者联盟</span>
+    <hr style="position:absolute;width: 250px;margin-top: 400px;margin-left: 450px">
+    <span style="display: block;position:absolute;width: 250px;margin-top: 420px;margin-left: 500px ">版权所有 复仇则者联盟</span>
+
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    $(".pr").click(function(){
+      const fetch = async() => {
+        try  {
+          const res = await  axios.get('http://mock-api.com/jzpddjzX.mock/content')
+
+          const {data: {first}} = res;
+
+          console.log(first);
+          var html = '';
+          first.forEach(function(item,i) {
+            html += `
+        <a  href="content_c.html">
+       <div style="margin-top: 100px;margin-left: 150px">
+  <span style="font-size: 28px;font-weight: 600;display: block;margin-left: 500px">${item.name}</span>
+  <img style=";width: 300px;height: 250px"  src='${item.imge_url}' />
+
+  <div style="width:350px;height: 150px;font-size: 14px; float: right;margin-top: 50px">${item.content}</div>
+</div>
+</a>
+      `;
+          })
+          $('.content').html(html);
+        }  catch (e) {
+          console.log(e)
+        }
+      }
+
+
+
+      fetch ()
+    })
+    $(".af").click(function(){
+      const fetch = async() => {
+        try  {
+          const res = await  axios.get('http://mock-api.com/jzpddjzX.mock/content_2')
+
+          const {data: {first}} = res;
+
+          console.log(first);
+          var html = '';
+          first.forEach(function(item,i) {
+            html += `
+        <a  href="content_c.html">
+       <div style="margin-top: 100px;margin-left: 150px">
+  <span style="font-size: 28px;font-weight: 600;display: block;margin-left: 500px">${item.name}</span>
+  <img style=";width: 300px;height: 250px"  src='${item.imge_url}' />
+
+  <div style="width:350px;height: 150px;font-size: 14px; float: right;margin-top: 50px">${item.content}</div>
+</div>
+</a>
+      `;
+          })
+          $('.content').html(html);
+        }  catch (e) {
+          console.log(e)
+        }
+      }
+
+
+
+      fetch ()
+    })
+  const fetch = async() => {
+    try  {
+      const res = await  axios.get('http://mock-api.com/jzpddjzX.mock/content')
+
+      const {data: {first}} = res;
+
+      console.log(first);
+      var html = '';
+      first.forEach(function(item,i) {
+        html += `
+        <a  href="content_c.html">
+       <div style="margin-top: 100px;margin-left: 150px">
+  <span style="font-size: 28px;font-weight: 600;display: block;margin-left: 500px">${item.name}</span>
+  <img style=";width: 300px;height: 250px"  src='${item.imge_url}' />
+
+  <div style="width:350px;height: 150px;font-size: 14px; float: right;margin-top: 50px">${item.content}</div>
+</div>
+</a>
+      `;
+      })
+      $('.content').html(html);
+    }  catch (e) {
+      console.log(e)
+    }
+  }
+
+
+
+  fetch ()
+
+</script>
+
+
+
+</html>

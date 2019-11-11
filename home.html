@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<style>
+  a{
+    text-decoration:none;
+    color:#333;
+  }
+  .header{
+    height: 100px;
+    width: 1200px;
+    margin: auto;
+  }
+  .biaoti{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .daohang{
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+  }
+  .tubiao{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+
+  }
+.avaenge{
+  float: right;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+  .servie_font{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 140px;
+  }
+  .servie_neirong{
+    background-color: #f4f4f4;
+    width: 1400px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 225px;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .servie{
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 600;
+     margin-left: 870px;
+    margin-top: 25px;
+  }
+  .group{
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 870px;
+    margin-top: 25px;
+  }
+  .news{
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 870px;
+    margin-top: 25px;
+  }
+  .footer{
+
+    background-color: #f4f4f4;
+    height: 550px;
+    margin-top: 50px;
+  }
+
+</style>
+<!--轮播图样式-->
+<style>
+
+  li{
+    list-style: none;
+  }
+  .outer{
+    margin-left: 200px;
+    height: 700px;
+    width: 1450px;
+    position:relative;
+  }
+  .img li{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .num{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+  }
+  .num li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+  .btn{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    display: none;
+  }
+  .left_btn{
+    left: 0;
+  }
+  .right_btn{
+    right: 0;
+  }
+  .outer:hover .btn{
+    display: inline-block;
+    cursor: pointer;
+  }
+  .current{
+    background-color: grey!important;
+  }
+
+</style>
+
+
+
+<div >
+  <div class="header">
+
+    <div class="biaoti">
+      <img class="tubiao" src="avaenge.png"/>
+      <div class="avaenge"><span >复仇者联盟</span></div></div>
+
+    <div class="daohang"><span><a href="home.html">首页</a> <a href="content_c.html">新闻</a>  <a href="map.html">关于我们</a></span></div>
+
+
+
+
+  </div>
+<div class="banner">
+  <div class="outer">
+
+    <ul class="img">
+      <li><a><img style="width: 1450px;height: 700px" src="1.jpg"></a></li>
+      <li><a><img style="width: 1450px;height: 700px" src="2.jpg"></a></li>
+      <li><a><img style="width: 1450px;height: 700px" src="3.jpg"></a></li>
+    </ul>
+    <ul class="num">
+      <li class="current">1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+
+    <div class="left_btn btn"><</div>
+    <div class="right_btn btn">></div>
+  </div>
+
+
+</div>
+  <div class="servie">
+    <span >服务范围</span></div>
+    <div class="servie_neirong">
+      <div class="servie_font">
+      <span style="padding-left: 60px;">拯救地球</span>
+      <span style="padding-left: 170px;">英雄合照</span>
+      <span style="padding-left: 170px;">寻找原石</span>
+      <span style="padding-left: 170px;">宇宙旅行</span>
+      </div>
+    </div>
+  <div class="group">
+    <span>团队介绍</span>
+
+  </div>
+  <div class="content"></div>
+
+  <!--<div class="news">-->
+    <!--<span>新闻动态</span>-->
+  <!--</div>-->
+  <div class="footer">
+    <div style="position:absolute;margin-top: 100px;">
+      <img style="padding-left: 150px" src="img/map.png">
+      <img  style="padding-left: 150px" src="img/email.png">
+      <img style="padding-left: 150px" src="img/customer.png"></div>
+    <div style="position:absolute;margin-top: 228px;">
+      <span style="padding-left: 150px">福州市仓山万达B区</span>
+      <span style="padding-left: 135px">admin@example.com</span>
+      <span style="padding-left: 130px">400-123-456</span>
+
+    </div>
+    <img style="width: 300px;height: 300px;float: right;margin-right: 200px;margin-top: 40px" src="img/erwei.png">
+    <span style="display: block;float: right;margin-top: 350px;margin-right: -250px">扫一扫，加入复仇者联盟</span>
+    <hr style="position:absolute;width: 250px;margin-top: 400px;margin-left: 800px">
+    <span style="display: block;position:absolute;width: 250px;margin-top: 450px;margin-left: 850px ">版权所有 复仇则者联盟</span>
+
+  </div>
+
+
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+
+const fetch = async() => {
+  try  {
+    const res = await  axios.get('http://mock-api.com/jzpddjzX.mock/group')
+
+    const {data: {first}} = res;
+
+    console.log(first);
+      var html = '';
+    first.forEach(function(item,index) {
+      html += `
+      <a href="content.html">
+        <div>
+            <img style="margin-left: 300px;margin-top: 50px;width: 600px;height: 450px"  src='${item.imge_url}' />
+            <span style="display: block;float: right;margin-right: 600px;margin-top: 50px;font-size: 28px;font-weight: 600">${item.name}</span>
+            <div style="width: 300px;height: 400px;display: block;float: right;margin-top: 100px;margin-right: -300px;font-size: 22px">${item.content}</div>
+        </div>
+        </a>
+      `;
+    })
+      $('.content').html(html);
+  }  catch (e) {
+    console.log(e)
+  }
+}
+
+
+
+fetch ()
+
+
+</script>
+
+
+
+
+<!--轮播图js-->
+<script>
+  var index=0;
+  $(".num li").mousemove(function () {
+    $(this).addClass("current").siblings().removeClass("current");
+    index=$(this).index();
+    $(".img li").eq(index).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
+  });
+  var time=setInterval(move,1000);
+  function move() {
+    index++;
+    if (index==4){
+      index=0
+    }
+    $(".num li").eq(index).addClass("current").siblings().removeClass("current");
+    $(".img li").eq(index).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
+  };
+  $(".outer").hover(function () {
+      clearInterval(time);
+    },
+    function () {
+      time=setInterval(move,1000);
+    });
+  $(".right_btn").click(function () {
+    move();
+  });
+  function moveL() {
+    index--;
+    if (index==-1){
+      index=3
+    }
+    $(".num li").eq(index).addClass("current").siblings().removeClass("current");
+    $(".img li").eq(index).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
+  }
+  $(".left_btn").click(function () {
+    moveL();
+  });
+</script>
+</html>

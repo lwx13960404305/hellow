@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="http://webapi.amap.com/maps?v=1.3&key=c93e1e293e5b1c3dc581f3ff633144d3&plugin=AMap.Autocomplete,AMap.PlaceSearch,AMap.Walking,AMap.Riding"></script>
+  <style>
+    a{
+      text-decoration:none;
+      color:#333;
+    }
+    .wide{
+      width: 1200px;
+
+      margin: auto;
+
+    }
+    .header{
+      height: 170px;
+      width: 1200px;
+      margin: auto;
+      background-color: #f4f4f4;
+    }
+    .biaoti{
+      float: left;
+      margin-top: 10px;
+      margin-left: 20px;
+      letter-spacing: 3px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .daohang {
+      float: right;
+      margin-top: 40px;
+      margin-right: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 4px;
+    }
+    .tubiao{
+      width: 50px;
+      height: 50px;
+      margin-top: 20px;
+
+    }
+    .avaenge{
+      float: right;
+      margin-top: 25px;
+      margin-left: 20px;
+    }
+
+    .footer{
+      margin-top: 50px;
+      background-color: #f4f4f4;
+      height: 500px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+<div class="wide">
+  <div class="header">
+
+    <div class="biaoti">
+      <img class="tubiao" src="avaenge.png"/>
+      <div class="avaenge"><span >复仇者联盟</span></div></div>
+
+    <div class="daohang"><span><a href="home.html">首页</a> <a href="content_c.html">新闻</a>  <a href="map.html">关于我们</a></span></div>
+    <span style="display: block;position:absolute;font-size: 30px;letter-spacing: 4px;margin-left: 30%;margin-top: 100px ">关于我们</span>
+  </div>
+
+  <div id="container" style="width: 500px;height: 500px;margin-top: 50px"></div>
+  <div style="width: 500px;height: 200px;float: right;margin-top: -500px;margin-right: 100px">
+    <span>
+      《复仇者联盟》（Marvel's The Avengers）是漫威影业出品的一部科幻动作电影，取材自漫威漫画，是漫威电影宇宙的第六部电影，同时也是第一阶段的收官作品。由乔斯·韦登执导，小罗伯特·唐尼、克里斯·埃文斯、马克·鲁法洛、克里斯·海姆斯沃斯、斯嘉丽·约翰逊、杰瑞米·雷纳、汤姆·希德勒斯顿、塞缪尔·杰克逊、克拉克·格雷格、寇碧·史莫德斯、联袂出演。影片于2012年5月5日在中国内地正式上映。
+影片讲述了神盾局指挥官尼克·弗瑞为了对付《雷神》中被流放的洛基，积极奔走寻找最强者，将钢铁侠、美国队长、雷神托尔、绿巨人、黑寡妇和鹰眼六位超级英雄集结在一起，组成了复仇者联盟，共同联手对付邪神洛基.
+    </span>
+  </div>
+  <div style="float: right;margin-top: -270px;margin-right: 550px">
+    <img style="height: 60px;width: 60px" src="img/map.png">
+
+  </div>
+  <div style="float: right;margin-top: -250px;margin-right: 400px;font-size: 17px;">
+    <span>福州市无锋网络</span>
+  </div>
+  <div style="float: right;margin-top: -200px;margin-right: 550px">
+    <img style="height: 60px;width: 60px" src="img/email.png">
+
+
+  </div>
+  <div style="float: right;margin-top: -180px;margin-right: 350px;font-size: 17px;">
+    <span>admin@example.com</span>
+  </div>
+  <div style="float: right;margin-top: -120px;margin-right: 550px">
+    <img style="height: 60px;width: 60px" src="img/customer.png">
+  </div>
+  <div style="float: right;margin-top: -100px;margin-right: 420px;font-size: 17px;">
+    <span>400-123-456</span>
+  </div>
+
+
+
+
+  <div class="footer">
+    <div style="position:absolute;margin-top: 100px;">
+      <img style="padding-left: 100px;width:100px;height: 100px" src="img/map.png">
+      <img  style="padding-left: 100px;width:100px;height: 100px" src="img/email.png">
+      <img style="padding-left: 100px;width:100px;height: 100px" src="img/customer.png"></div>
+    <div style="position:absolute;margin-top: 228px;">
+      <span style="padding-left: 80px">福州市仓山万达B区</span>
+      <span style="padding-left: 60px">admin@example.com</span>
+      <span style="padding-left: 60px">400-123-456</span>
+
+    </div>
+    <img style="width: 300px;height: 300px;float: right;margin-right: 100px;margin-top: 40px" src="img/erwei.png">
+    <span style="display: block;float: right;margin-top: 350px;margin-right: -250px">扫一扫，加入复仇者联盟</span>
+    <hr style="position:absolute;width: 250px;margin-top: 400px;margin-left: 450px">
+    <span style="display: block;position:absolute;width: 250px;margin-top: 420px;margin-left: 500px ">版权所有 复仇则者联盟</span>
+
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+<!--地图-->
+<script>
+  window.onload = function () {
+    var map = new AMap.Map('container', {
+      resizeEnable: true,
+      zoom: 12,
+      center: [118.756376, 32.052573]
+    });
+//地图内容
+    map.setFeatures(['bg', 'building', 'road', 'point'])
+//地图空间
+    AMap.plugin(['AMap.ToolBar', 'AMap.Scale', 'AMap.MapType'],
+      function () {
+        map.addControl(new AMap.ToolBar());
+
+        map.addControl(new AMap.Scale());
+      });
+//覆盖物
+    var marker = new AMap.Marker({
+      position: [118.756376, 32.052573]
+    });
+    marker.setMap(map);
+    var circle = new AMap.Circle({
+      center: [118.756376, 32.052573],
+      radius: 100,
+      fillOpacity: 0.2,
+      strokeWeight: 1
+    })
+    circle.setMap(map);
+//自定义窗体
+    var infowindow;
+    var infoWindowContent = '<div class="infowindow-content"><h3>您好！欢迎进入斗帝地图！</h3><span style="color:red;font-size:12px;">(点击左上角的小圆点可快速定位)</span></div>';
+    map.plugin('AMap.AdvancedInfoWindow', function () {
+      infowindow = new AMap.AdvancedInfoWindow({
+        panel: 'panel',
+        placeSearch: true,
+        asOrigin: true,
+        asDestination: true,
+        content: infoWindowContent
+      });
+      infowindow.open(map, [118.756376, 32.052573]);
+    });
+
+//汽车路线规划
+    $('#car').on('click', function () {
+      $('.pageShow').slideToggle();
+      clearMarker()
+      AMap.plugin('AMap.Driving', function () {
+        var drving = new AMap.Driving({
+          map: map,
+          panel: "panel"
+        })
+        drving.search([
+          {keyword: $('#star').val()},
+          {keyword: $('#end').val()}
+        ]);
+      })
+    })
+//步行路线规划
+    $("#riding").on('click', function () {
+      $('.pageShow').slideToggle();
+      clearMarker()
+      var walking = new AMap.Walking({
+        map: map,
+        panel: "panel"
+      });
+      walking.search([
+        {keyword: $('#cStar').val()},
+        {keyword: $('#cEnd').val()}
+      ]);
+    })
+//骑行路线规划
+    $('#walk').on('click', function () {
+      $('.pageShow').slideToggle();
+      clearMarker()
+      var riding = new AMap.Riding({
+        map: map,
+        panel: "panel"
+      });
+      riding.search([
+        {keyword: $('#wStar').val()},
+        {keyword: $('#wEnd').val()}
+      ]);
+    })
+
+    function clearMarker() {
+      if (marker) {
+        marker.setMap(null);
+        marker = null;
+      }
+      if (infowindow) {
+        infowindow.close()
+      }
+    }
+
+//输入提示
+    var autoOptions = new AMap.Autocomplete({
+      input: "tipinput"
+    });
+//城市搜索
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+      map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+      placeSearch.setCity(e.poi.adcode);
+      placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+
+    $('#show').on('click', function () {
+      clearMarker()
+      $('.pageShow').slideToggle();
+    })
+
+    $('#box').on('click', function () {
+      clearMarker()
+      $('.pageShow').slideToggle();
+      var rectOptions = {
+        strokeStyle: "dashed",
+        strokeColor: "#333",
+        fillColor: "#333",
+        fillOpacity: 0.3,
+        strokeOpacity: 1,
+        strokeWeight: 1
+      };
+      map.plugin(["AMap.MouseTool"], function () {
+        var mouseTool = new AMap.MouseTool(map);
+        //通过rectOptions更改拉框放大时鼠标绘制的矩形框样式
+        mouseTool.rectZoomIn(rectOptions);
+      });
+    })
+    $('#meter').on('click', function () {
+      $('.pageShow').slideToggle();
+      map.plugin(["AMap.RangingTool"], function () {
+        ruler1 = new AMap.RangingTool(map);
+        AMap.event.addListener(ruler1, "end", function (e) {
+          ruler1.turnOff();
+        });
+        var sMarker = {
+          icon: new AMap.Icon({
+            size: new AMap.Size(19, 31),//图标大小
+            image: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b1.png"
+          })
+        };
+        var eMarker = {
+          icon: new AMap.Icon({
+            size: new AMap.Size(19, 31),//图标大小
+            image: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b2.png"
+          }),
+          offset: new AMap.Pixel(-9, -31)
+        };
+        var lOptions = {
+          strokeStyle: "solid",
+          strokeColor: "#FF33FF",
+          strokeOpacity: 1,
+          strokeWeight: 2
+        };
+        var rulerOptions = {startMarkerOptions: sMarker, endMarkerOptions: eMarker, lineOptions: lOptions};
+        ruler2 = new AMap.RangingTool(map, rulerOptions);
+      });
+      //启用自定义样式测距
+
+      ruler1.turnOff();
+      ruler2.turnOn();
+    })
+  }
+
+</script>
+</html>
